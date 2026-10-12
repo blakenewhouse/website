@@ -15,3 +15,5 @@ header{justify-content:flex-end}.hero h1{font-size:72px;letter-spacing:-2px;whit
 .video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:38px;border-radius:9px;background:#252e2ae6;color:white;font-size:18px}
 .video-thumbnail:hover .video-play,.video-thumbnail:focus-visible .video-play{background:var(--green)}
 @media(max-width:600px){.video-section{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:18px;padding:28px 0}.video-section h2{font-size:23px}.video-section .small-link{font-size:12px;gap:8px}.video-play{width:38px;height:28px;font-size:14px}}
+
+.video-date{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.6}
