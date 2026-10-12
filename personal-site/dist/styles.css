@@ -5,3 +5,13 @@
 header{justify-content:flex-end}.hero h1{font-size:72px;letter-spacing:-2px;white-space:nowrap}.hero{gap:40px;grid-template-columns:minmax(0,1fr) 190px}@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-art{display:none}.hero h1{font-size:clamp(32px,8.3vw,72px)}}@media(max-width:700px){.hero h1{letter-spacing:-1.3px}header nav{font-size:13px;gap:24px}}
 
 .work-notice{display:table;margin-top:28px;padding:6px 12px;border:1px solid #d4c59e;border-radius:4px;background:#f3eddf;color:#68562f;font-size:12px;font-weight:500}
+
+.video-section{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:36px;align-items:center;border-top:1px solid var(--line);padding:36px 0}
+.video-section h2{font-size:32px;line-height:1.25}
+.video-section h2 a:hover{text-decoration:underline;text-underline-offset:5px}
+.video-section .small-link{margin-top:16px}
+.video-thumbnail{display:block;position:relative;overflow:hidden;border-radius:4px;background:var(--pale);aspect-ratio:16/9}
+.video-thumbnail img{display:block;width:100%;height:100%;object-fit:cover}
+.video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:38px;border-radius:9px;background:#252e2ae6;color:white;font-size:18px}
+.video-thumbnail:hover .video-play,.video-thumbnail:focus-visible .video-play{background:var(--green)}
+@media(max-width:600px){.video-section{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:18px;padding:28px 0}.video-section h2{font-size:23px}.video-section .small-link{font-size:12px;gap:8px}.video-play{width:38px;height:28px;font-size:14px}}
